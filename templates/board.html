@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Boggle</title>
+</head>
+<body>
+    <div id="information">
+        <div id="timesPlayed"> Games played: {{timesPlayed}}</div>
+        <div id="highestScore"> Highest score: {{highScore}}</div>
+    </div>
+    <h1> Boggle </h1>
+
+    <div id="timer"> You have 30 seconds {{timer}} </div>
+    {% block content %}
+
+
+
+    <table class ='gameBoard'>
+        <tbody>
+            {% for char in board_game %}
+        <tr> 
+            <td>
+                {{char}}
+            </td>
+        </tr>{% endfor %}
+        </tbody>
+    </table>
+
+    <div id="currentScore"> {{score}} </div>
+
+    <form class="form_id" method="POST">
+        <input type="text" autocomplete="off" placeholder="Guess a word" class="word" name="word">
+        <button> Submit </button>
+    </form>
+
+    <ul id="results">
+
+    </ul>
+
+    {% endblock %}
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/static/game.js"></script>
+<!--     <script>
+        let game = new BoggleGame("boggle", 60);
+      </script> -->
+</body>
+</html>

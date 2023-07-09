@@ -1,0 +1,77 @@
+.gameBoard {
+    display: grid;
+    text-align: center;
+    font-size: 70px;
+    background-color: rgb(232, 195, 139);
+    color: white;
+    font-stretch: expanded;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    border-radius: 8px;
+
+}
+
+
+body {
+    box-sizing: border-box;
+}
+
+
+h1 {
+    color: peru;
+    font-size: 120px;
+    text-align: center;
+    text-transform: uppercase;    
+    font-family: 'Caprasimo', cursive;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 2px;
+
+}
+
+
+#information {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: none;
+    background-color: coral;
+    color: white;
+    width: fit-content;
+    text-transform: uppercase;
+    padding-top: 9px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+
+}
+
+#timer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    color: red;
+    padding: 5px;
+    size: 20px;
+}
+
+.form_id {
+    margin: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    size: 20px;
+}
+
+#currentScore{
+    position: relative;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+
